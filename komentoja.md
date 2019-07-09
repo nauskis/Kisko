@@ -14,9 +14,10 @@
 
 |Command|Explanation|mode|
 |-----------------------------|--------------------------------------------|--------------------------------------------|
-|enable||
-|Configure terminal|Enter global configuration mode|switch>
-|Interface vlan xx|Creates an SVI for specified Vlan|Interface vlan 20
+|enable|Enter privileged EXEC mode|EXEC|
+|Configure terminal|Enter global configuration mode|Privileged EXEC|
+|Interface vlan xx|Creates an SVI for specified Vlan|Configuration mode|
+|ip address xxx.xxx.xxx.xxx yyy.yyy.yyy.yyy|Configure the management interface IP address|Interface-level within configuration mode|
 ||||
 ||||
 ||||
@@ -35,7 +36,8 @@
 ||||
 ||||
 ||||
-||||
+
+-------------------------------------------------------------------------------------------------------------------------
 
 ### SVI (Switch Virtual Interface)
 An SVI is normally found on switches (Layer 3 and Layer 2). If I have understood correctly, each Vlan has it's own SVI. An SVI cannot be activated unless the VLAN itself is created and at least one physical port is associated and active in that VLAN. SVI allows traffic to be routed between VLANs.
@@ -48,3 +50,4 @@ The management interface is the default interface for in-band management of the 
 - https://www.cisco.com/c/en/us/td/docs/wireless/controller/7-4/configuration/guides/consolidated/b_cg74_CONSOLIDATED/b_cg74_CONSOLIDATED_chapter_010011011.html
 - https://learningnetwork.cisco.com/thread/62241
 - https://www.cisco.com/E-Learning/bulk/public/tac/cim/cib/using_cisco_ios_software/02_cisco_ios_hierarchy.htm
+- https://study-ccna.com/ios-basic-commands/
