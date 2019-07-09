@@ -40,9 +40,7 @@
 |end|Return to privileged EXEC mode|
 |copy running-config startup-config|Save the running configuration to the startup configuration|
 
-<p align="center">
-  <img width="680" height="196" src="https://raw.githubusercontent.com/nauskis/Kisko/master/Kuvia/SVI.PNG">
-</p>
+![SVI](https://raw.githubusercontent.com/nauskis/Kisko/master/Kuvia/SVI.PNG)
 
 ----------------------------------------------------------------------------------------------------------------------------
 
