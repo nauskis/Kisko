@@ -1,2 +1,3 @@
 # Kisko
-Ciscon kytkimen / reitittimen konfiguraation opettelua
+
+Practicing to configure Cisco networking devices for School courses and projects.
