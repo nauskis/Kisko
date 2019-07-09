@@ -4,7 +4,7 @@
 |Mode|Explanation|Example|
 |-----------|--------------|-----------------------|
 |Router>|User EXEC mode||
-|Router#|Privileged EXEC mode|configure terminal|enable|
+|Router#|Privileged EXEC mode|enable|
 |Router(config)#|Configuration mode (accessible only at privileged EXEC mode)|configure terminal|
 |Router(config-if)#|Interface level within configuration mode|interface vlan xx|
 |Router(config-router)#|Routing engine level within configuration mode||
