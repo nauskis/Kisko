@@ -9,6 +9,7 @@
 |Router(config-if)#|Interface level within configuration mode|interface vlan xx|
 |Router(config-router)#|Routing engine level within configuration mode||
 |Router(config-line)#|Line level (vty, tty, async) within configuration mode|line vty 0 15|
+
 ![hierarkia](https://github.com/nauskis/Kisko/blob/master/Kuvia/hierarchy.PNG?raw=true)
 
 ----------------------------------------------------------------------------------------------------------------------------
