@@ -12,6 +12,9 @@
 
 ![hierarkia](https://github.com/nauskis/Kisko/blob/master/Kuvia/hierarchy.PNG?raw=true)
 
+<p align="center">
+  <img width="500" height="540" src="https://github.com/nauskis/Kisko/blob/master/Kuvia/hierarchy.PNG?raw=true">
+</p>
 ----------------------------------------------------------------------------------------------------------------------------
 
 ### Basic commands
