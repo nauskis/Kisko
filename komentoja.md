@@ -21,7 +21,21 @@
 |ip address xxx.xxx.xxx.xxx yyy.yyy.yyy.yyy|Configure the interface IP address|Interface-level within configuration mode|
 |no shutdown|Enable the specified interface|Interface-level within configuration mode|
 |end|Return to privileged EXEC mode|interface-level within configuration mode|
+|show ip interface brief|Determine the status of physical and virtual interfaces|Privileged EXEC mode|
 |copy running-config startup-config|Save the running config to the startup config|Privileged EXEC mode|
+
+----------------------------------------------------------------------------------------------------------------------------
+
+### Configure Switch Management Interface (SVI)
+|Command|Explanation|
+|------------------------------|--------------------------------------------|
+|enable|enter privileged mode|
+|configure terminal|Enter configuration mode|
+|interface vlan 99|Enter interface configuration mode for the SVI|
+|ip address xxx.xxx.xxx.xxx yyy.yyy.yyy.yyy|Configure SVI IP address|
+|no shutdown|Enable the management interface|
+|end|Return to privileged EXEC mode|
+|copy running-config startup-config|Save the running configuration to the startup configuration|
 
 ----------------------------------------------------------------------------------------------------------------------------
 
