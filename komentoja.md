@@ -10,8 +10,6 @@
 |Router(config-router)#|Routing engine level within configuration mode||
 |Router(config-line)#|Line level (vty, tty, async) within configuration mode|line vty 0 15|
 
-![hierarkia](https://github.com/nauskis/Kisko/blob/master/Kuvia/hierarchy.PNG?raw=true)
-
 <p align="center">
   <img width="500" height="540" src="https://github.com/nauskis/Kisko/blob/master/Kuvia/hierarchy.PNG?raw=true">
 </p>
