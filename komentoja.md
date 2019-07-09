@@ -12,30 +12,30 @@
 
 ----------------------------------------------------------------------------------------------------------------------------
 
+### Basic commands
 |Command|Explanation|mode|
 |-----------------------------|--------------------------------------------|--------------------------------------------|
 |enable|Enter privileged EXEC mode|EXEC|
 |Configure terminal|Enter global configuration mode|Privileged EXEC|
-|Interface vlan xx|Creates an SVI for specified Vlan|Configuration mode|
-|ip address xxx.xxx.xxx.xxx yyy.yyy.yyy.yyy|Configure the management interface IP address|Interface-level within configuration mode|
-||||
-||||
-||||
-||||
-||||
-||||
-||||
-||||
-||||
-||||
-||||
-||||
-||||
-||||
-||||
-||||
-||||
-||||
+|Interface XX|Enter interface configuration mode|Configuration mode|
+|ip address xxx.xxx.xxx.xxx yyy.yyy.yyy.yyy|Configure the interface IP address|Interface-level within configuration mode|
+|no shutdown|Enable the specified interface|Interface-level within configuration mode|
+|end|Return to privileged EXEC mode|interface-level within configuration mode|
+|copy running-config startup-config|Save the running config to the startup config|Privileged EXEC mode|
+
+----------------------------------------------------------------------------------------------------------------------------
+
+### Configure Switch Default Gateway
+|Command|Explanation|
+|----------------------------|---------------------------------------------|
+|Enable||
+|conf t||
+|ip default-gateway xxx.xxx.xxx.xxx||
+|end||
+|copy running-config startup-config||
+
+The default gateway is the router to which the switch is connected. The switch will forward its IP packets with destination IP addresses outside the local network to the default gateway. The switch should be configured with a default gateway if it will be managed remotely from networks that are not directly connected.
+![default-gateway]()
 
 -------------------------------------------------------------------------------------------------------------------------
 
