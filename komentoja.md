@@ -35,7 +35,8 @@
 |copy running-config startup-config||
 
 The default gateway is the router to which the switch is connected. The switch will forward its IP packets with destination IP addresses outside the local network to the default gateway. The switch should be configured with a default gateway if it will be managed remotely from networks that are not directly connected.
-![default-gateway](https://github.com/nauskis/Kisko/blob/master/Kuvia/default-gateway.PNG?raw=true)
+![default-gateway](https://github.com/nauskis/Kisko/blob/master/Kuvia/default-gateway.PNG?raw=true)  
+The default gateway of the switch in picture is the router port connected to the switch.
 
 -------------------------------------------------------------------------------------------------------------------------
 
