@@ -85,7 +85,7 @@
 |------------------------------|--------------------------------------------|
 |enable|enter privileged mode|
 |configure terminal|Enter configuration mode|
-|interface vlan 99|Enter interface configuration mode for the SVI|
+|interface vlan xx|Enter interface configuration mode for the SVI|
 |ip address xxx.xxx.xxx.xxx yyy.yyy.yyy.yyy|Configure SVI IP address|
 |no shutdown|Enable the management interface|
 |end|Return to privileged EXEC mode|
