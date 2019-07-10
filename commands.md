@@ -76,6 +76,8 @@
 |exit|return to privileged EXEC mode|
 |copy running-config startup-config|save the current configuration to the startup-configuration|
 
+- more about SSH v2 [here](http://www.snailbook.com/faq/ssh-1-vs-2.auto.html)
+
 
 ----------------------------------------------------------------------------------------------------------------------------
 
@@ -123,3 +125,5 @@ The management interface is the default interface for in-band management of the 
 - https://www.cisco.com/E-Learning/bulk/public/tac/cim/cib/using_cisco_ios_software/02_cisco_ios_hierarchy.htm
 - https://study-ccna.com/ios-basic-commands/
 - https://www.thegeekstuff.com/2013/08/enable-ssh-cisco/
+- https://www.cisco.com/c/en/us/support/docs/lan-switching/inter-vlan-routing/41860-howto-L3-intervlanrouting.html
+- http://www.snailbook.com/faq/ssh-1-vs-2.auto.html
