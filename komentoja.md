@@ -23,7 +23,7 @@
 
 ----------------------------------------------------------------------------------------------------------------------------
 
-### Basic device configuration
+### Example of basic device configuration
 |Command|Explanation|
 |--------------------------------------|---------------------------------------|
 |enable|enter privileged EXEC mode|
