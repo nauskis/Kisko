@@ -1,3 +1,3 @@
 # Kisko
 
-Practicing to configure Cisco networking devices for School courses and projects.
+Practicing to configure Cisco networking devices for school courses and projects.
