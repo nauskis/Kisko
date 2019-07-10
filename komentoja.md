@@ -69,7 +69,7 @@
 |1024|Set the length of the RSA key|
 |username villa secret paita|Set SSH username and password|
 |line vty 0 15|Enter configuration mode for the first 16 VTY lines|
-|transport input ssh||
+|transport input all|This defines which protocols can access VTY lines (ssh, telnet or both)|
 |login local|use both username and password for accessing VTY lines|
 |exit||
 |ip ssh version 2|use SSH version 2|
