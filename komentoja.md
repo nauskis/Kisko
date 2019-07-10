@@ -58,7 +58,7 @@
 ----------------------------------------------------------------------------------------------------------------------------
 
 ### Configure SSH connection
-|Command|Explanation|mode|
+|Command|Explanation|
 |-----------------------------|--------------------------------------------|
 |enable|enter privileged EXEC mode|
 |show ip ssh|Show ssh configuration|
