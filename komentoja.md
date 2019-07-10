@@ -29,6 +29,38 @@
 
 ----------------------------------------------------------------------------------------------------------------------------
 
+### Basic device configuration
+|Command|Explanation|
+|--------------------------------------|---------------------------------------|
+|enable|enter privileged EXEC mode|
+|configure terminal|enter configuration mode with privileged EXEC mode|
+|hostname s1|configure the device with a hostname|
+|enable secret karamba|Secure privileged EXEC access with a password|
+|exit||
+|conf t||
+|line console 0||
+|password kiskokisko||
+|login||
+|exit||
+|conf t||
+|line vty 0 15||
+|password pillimehu||
+|login||
+|exit||
+|service password-encryption||
+|exit||
+|show running-config||
+|save running-config startup-config||
+
+
+
+- The most important password to configure is access to the privileged EXEC mode (enable). To secure privileged EXEC access, use the `enable secret password` global config command.
+- To secure EXEC access, the console port must be configured by entering line console configuration mode by using `line console 0` global configuration command. The zero is used to represent the first and most likely only console interface.
+- Virtual terminal (VTY) lines enable remote access to the device. To secure VTY lines used for SSH and Telnet, enter line VTY mode using the command `line vty 0 15`. Next specify the VTY password using the `Password password` command. Lastly, enavle VTY access using the `login` command.
+- 
+
+----------------------------------------------------------------------------------------------------------------------------
+
 ### Configure Switch Management Interface (SVI)
 |Command|Explanation|
 |------------------------------|--------------------------------------------|
