@@ -52,7 +52,7 @@
 
 - The most important password to configure is access to the privileged EXEC mode (enable). To secure privileged EXEC access, use the `enable secret password` global config command.
 - To secure EXEC access, the console port must be configured by entering line console configuration mode by using `line console 0` global configuration command. The zero is used to represent the first and most likely only console interface.
-- Virtual terminal (VTY) lines enable remote access to the device. To secure VTY lines used for SSH and Telnet, enter line VTY mode using the command `line vty 0 15`. Next specify the VTY password using the `Password password` command. Lastly, enavle VTY access using the `login` command.
+- Virtual terminal (VTY) lines enable remote access to the device. To secure VTY lines used for SSH and Telnet, enter line VTY mode using the command `line vty 0 15`. Next specify the VTY password using the `Password password` command. Lastly, enable VTY access using the `login` command.
 - The only IP address  the switch needs for remote connection is that of the vlan 1 interface. By default, every port is connected to vlan 1, thus when a computer is connected to the switch by e.g Ethernet connection, the switch can be remotely configured.
 
 ----------------------------------------------------------------------------------------------------------------------------
