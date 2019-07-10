@@ -76,7 +76,7 @@
 |exit|return to privileged EXEC mode|
 |copy running-config startup-config|save the current configuration to the startup-configuration|
 
-- more about SSH v2 [here](http://www.snailbook.com/faq/ssh-1-vs-2.auto.html)
+- more about SSH v1 & v2 differences [here](http://www.snailbook.com/faq/ssh-1-vs-2.auto.html)
 
 
 ----------------------------------------------------------------------------------------------------------------------------
