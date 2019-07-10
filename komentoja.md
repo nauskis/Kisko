@@ -59,7 +59,7 @@
 
 ### Configure SSH connection
 |Command|Explanation|mode|
-|-----------------------------|--------------------------------------------|--------------------------------------------|
+|-----------------------------|--------------------------------------------|
 |enable|enter privileged EXEC mode|
 |show ip ssh|Show ssh configuration|
 |conf t|Enter global configuration mode|
