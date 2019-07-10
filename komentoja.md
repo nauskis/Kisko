@@ -38,19 +38,19 @@
 |enable secret karamba|Secure privileged EXEC access with a password|
 |exit||
 |conf t||
-|line console 0||
-|password kiskokisko||
-|login||
+|line console 0|Enter console port configuration mode|
+|password kiskokisko|Enter password for console port|
+|login|Enable login to console port|
 |exit||
 |conf t||
-|line vty 0 15||
-|password pillimehu||
-|login||
+|line vty 0 15|Enable VTY (remote access lines) for the first 16 ports|
+|password pillimehu|Set password for VTY lines|
+|login|Enable login from VTY lines|
 |exit||
-|service password-encryption||
+|service password-encryption|Encrypt all passwords shown in configuration files|
 |exit||
-|show running-config||
-|save running-config startup-config||
+|show running-config|Shows the currently running configuration|
+|save running-config startup-config|Save the currently running configuration to the start-up configuration|
 
 
 
