@@ -63,16 +63,16 @@
 |enable|enter privileged EXEC mode|EXEC mode|
 |show ip ssh|Show ssh configuration|Privileged EXEC mode|
 |conf t|Enter global configuration mode|privileged EXEC mode|
-|hostname S1|Set the switch hostname|Global configuration mode|
-|ip domain-name cisco.com|set switch domain name|Global configuration mode|
-|crypto key generate rsa|Generate the RSA key|global configuration mode|
-|1024|Set the length of the RSA key|global configuration mode|
+|hostname S1|Set the switch hostname|Global config mode|
+|ip domain-name cisco.com|set switch domain name|Global config mode|
+|crypto key generate rsa|Generate the RSA key|global config mode|
+|1024|Set the length of the RSA key|global config mode|
 |username villa secret paita|Set SSH username and password|global configuration mode|
-|line vty 0 15|Enter configuration mode for the first 16 VTY lines|vty lines configuration mode|
+|line vty 0 15|Enter configuration mode for the first 16 VTY lines|vty lines config mode|
 |transport input ssh||vty lines configuration mode|
-|login local|use both username and password for accessing VTY lines|vty lines configuration mode|
+|login local|use both username and password for accessing VTY lines|vty lines config mode|
 |exit||vty lines configuration mode|
-|ip ssh version 2|use SSH version 2|Global configuration mode|
+|ip ssh version 2|use SSH version 2|Global config mode|
 |exit|||
 |copy running-config startup-config|||
 
