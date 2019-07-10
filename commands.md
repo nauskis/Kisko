@@ -34,11 +34,11 @@
 |line console 0|Enter console port configuration mode|
 |password kiskokisko|Enter password for console port|
 |login|Enable login to console port|
-|exit||
+|exit|return to global configuration mode|
 |line vty 0 15|Enable VTY (remote access lines) for the first 16 ports|
 |password pillimehu|Set password for VTY lines|
 |login|Enable login from VTY lines|
-|exit||
+|exit|return to global configuration mode|
 |service password-encryption|Encrypt all passwords shown in configuration files|
 |interface vlan 1|Enter configuration mode for interface vlan 1|
 |ip address ip-address subnet-mask|Configure the interface with IP address and subnet mask|
@@ -47,7 +47,7 @@
 |exit|Exit global configuration mode|
 |show running-config|Shows the currently running configuration|
 |save running-config startup-config|Save the currently running configuration to the start-up configuration|
-|exit||
+|exit|exit privileged EXEC mode|
 
 
 - The most important password to configure is access to the privileged EXEC mode (enable). To secure privileged EXEC access, use the `enable secret password` global config command.
@@ -71,10 +71,10 @@
 |line vty 0 15|Enter configuration mode for the first 16 VTY lines|
 |transport input all|This defines which protocols can access VTY lines (ssh, telnet or both)|
 |login local|use both username and password for accessing VTY lines|
-|exit||
-|ip ssh version 2|use SSH version 2|
-|exit||
-|copy running-config startup-config||
+|exit|return to global configuration mode|
+|ip ssh version 2|use more secure SSH 2 version|
+|exit|return to privileged EXEC mode|
+|copy running-config startup-config|save the current configuration to the startup-configuration|
 
 
 ----------------------------------------------------------------------------------------------------------------------------
