@@ -18,12 +18,6 @@
 ### Basic commands
 |Command|Explanation|mode|
 |-----------------------------|--------------------------------------------|--------------------------------------------|
-|enable|Enter privileged EXEC mode|EXEC|
-|Configure terminal|Enter global configuration mode|Privileged EXEC|
-|Interface XX|Enter interface configuration mode|Configuration mode|
-|ip address xxx.xxx.xxx.xxx yyy.yyy.yyy.yyy|Configure the interface IP address|Interface-level within configuration mode|
-|no shutdown|Enable the specified interface|Interface-level within configuration mode|
-|end|Return to privileged EXEC mode|interface-level within configuration mode|
 |show ip interface brief|Determine the status of physical and virtual interfaces|Privileged EXEC mode|
 |copy running-config startup-config|Save the running config to the startup config|Privileged EXEC mode|
 
