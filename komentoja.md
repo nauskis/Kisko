@@ -36,28 +36,29 @@
 |configure terminal|enter configuration mode with privileged EXEC mode|
 |hostname s1|configure the device with a hostname|
 |enable secret karamba|Secure privileged EXEC access with a password|
-|exit||
-|conf t||
 |line console 0|Enter console port configuration mode|
 |password kiskokisko|Enter password for console port|
 |login|Enable login to console port|
 |exit||
-|conf t||
 |line vty 0 15|Enable VTY (remote access lines) for the first 16 ports|
 |password pillimehu|Set password for VTY lines|
 |login|Enable login from VTY lines|
 |exit||
 |service password-encryption|Encrypt all passwords shown in configuration files|
-|exit||
+|interface vlan 1|Enter configuration mode for interface vlan 1|
+|ip address ip-address subnet-mask|Configure the interface with IP address and subnet mask|
+|no shutdown|Turn the port on|
+|exit|Exit the interface configuration|
+|exit|Exit global configuration mode|
 |show running-config|Shows the currently running configuration|
 |save running-config startup-config|Save the currently running configuration to the start-up configuration|
-
+|exit||
 
 
 - The most important password to configure is access to the privileged EXEC mode (enable). To secure privileged EXEC access, use the `enable secret password` global config command.
 - To secure EXEC access, the console port must be configured by entering line console configuration mode by using `line console 0` global configuration command. The zero is used to represent the first and most likely only console interface.
 - Virtual terminal (VTY) lines enable remote access to the device. To secure VTY lines used for SSH and Telnet, enter line VTY mode using the command `line vty 0 15`. Next specify the VTY password using the `Password password` command. Lastly, enavle VTY access using the `login` command.
-- 
+- The only IP address  the switch needs for remote connection is that of the vlan 1 interface. By default, every port is connected to vlan 1, thus when a computer is connected to the switch by e.g Ethernet connection, the switch can be remotely configured.
 
 ----------------------------------------------------------------------------------------------------------------------------
 
