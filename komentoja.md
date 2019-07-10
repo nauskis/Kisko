@@ -21,6 +21,7 @@
 |show ip interface brief|Determine the status of physical and virtual interfaces|Privileged EXEC mode|
 |copy running-config startup-config|Save the running config to the startup config|Privileged EXEC mode|
 
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 ### Example of basic device configuration
@@ -55,6 +56,29 @@
 - The only IP address  the switch needs for remote connection is that of the vlan 1 interface. By default, every port is connected to vlan 1, thus when a computer is connected to the switch by e.g Ethernet connection, the switch can be remotely configured.
 
 ----------------------------------------------------------------------------------------------------------------------------
+
+### Configure SSH connection
+|Command|Explanation|mode|
+|-----------------------------|--------------------------------------------|--------------------------------------------|
+|enable|enter privileged EXEC mode|EXEC mode|
+|show ip ssh|Show ssh configuration|Privileged EXEC mode|
+|conf t|Enter global configuration mode|privileged EXEC mode|
+|hostname S1|Set the switch hostname|Global configuration mode|
+|ip domain-name cisco.com|set switch domain name|Global configuration mode|
+|crypto key generate rsa|Generate the RSA key|global configuration mode|
+|1024|Set the length of the RSA key|global configuration mode|
+|username villa secret paita|Set SSH username and password|global configuration mode|
+|line vty 0 15|Enter configuration mode for the first 16 VTY lines|vty lines configuration mode|
+|transport input ssh||vty lines configuration mode|
+|login local|use both username and password for accessing VTY lines|vty lines configuration mode|
+|exit||vty lines configuration mode|
+|ip ssh version 2|use SSH version 2|Global configuration mode|
+|exit|||
+|copy running-config startup-config|||
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
 
 ### Configure Switch Management Interface (SVI)
 |Command|Explanation|
@@ -98,3 +122,4 @@ The management interface is the default interface for in-band management of the 
 - https://learningnetwork.cisco.com/thread/62241
 - https://www.cisco.com/E-Learning/bulk/public/tac/cim/cib/using_cisco_ios_software/02_cisco_ios_hierarchy.htm
 - https://study-ccna.com/ios-basic-commands/
+- https://www.thegeekstuff.com/2013/08/enable-ssh-cisco/
