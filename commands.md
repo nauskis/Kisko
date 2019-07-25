@@ -87,6 +87,20 @@
 
 ### Configure vlans
 
+|Command|Explanation|
+|-------------------------------------------|---------------------------------------------------|
+|**Create a VLAN**||
+|Configure terminal|Enter global configuration mode|
+|vlan *vlan-id*|Create a vlan with a valid id number|
+|name *vlan-name*|Specify a unique name to identify the VLAN|
+|end|Return to privileged EXEC mode|
+|**Assign Ports to VLANs**||
+|configure terminal|Enter global configuration mode|
+|interface *interface-id*|Enter interface configuration mode|
+|switchport mode access|Set the port to access mode|
+|switchport access vlan *vlan-id*|Assign the port to a VLAN|
+|end|Return to privileged EXEC mode|
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 ### Configure Switch Management Interface (SVI)
