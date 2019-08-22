@@ -83,6 +83,17 @@
 
 ### Configure Switch Trunk port
 
+|Command|Explanation|
+|-------------------------------------------|---------------------------------------------------|
+|**Trunk Configuration**||
+|Enable|Enter privileged EXEC mode|
+|Configure terminal|Enter global configuration mode|
+|interface *interface_id*|Enter interface configuration mode|
+|switchport mode trunk|Force the link to be a trunk link|
+|switchport trunk native vlan *vlan_id*|Specify a native VLAN for untagged frames|
+|switchport trunk allowed vlan *vlan_list*|Specify the list of of VLANs to be allowed on the trunk link|
+|end|Return to privileged exec mode|
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 ### Configure vlans
