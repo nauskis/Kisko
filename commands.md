@@ -85,7 +85,6 @@
 
 |Command|Explanation|
 |-------------------------------------------|---------------------------------------------------|
-|**Trunk Configuration**||
 |Enable|Enter privileged EXEC mode|
 |Configure terminal|Enter global configuration mode|
 |interface *interface_id*|Enter interface configuration mode|
