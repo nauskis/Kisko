@@ -94,8 +94,6 @@
 |end|Return to privileged exec mode|
 
 
-----------------------------------------------------------------------------------------------------------------------------
-
 ### Resetting configured values on Trunk links
 
 |Command|Explanation|
