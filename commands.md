@@ -93,6 +93,20 @@
 |switchport trunk allowed vlan *vlan_list*|Specify the list of of VLANs to be allowed on the trunk link|
 |end|Return to privileged exec mode|
 
+
+----------------------------------------------------------------------------------------------------------------------------
+
+### Resetting configured values on Trunk links
+
+|Command|Explanation|
+|------------------------------------------|-----------------------------------------------------|
+|Enable|Enter privileged EXEC mode|
+|Configure terminal|Enter global configuration mode|
+|interface *interface_id*|Enter interface configuration mode|
+|no switchport trunk allowed vlan|Set trunk to allow all VLANs|
+|no switchport trunk native vlan|Reset native vlan to default|
+|end|Return to privileged EXEC mode|
+
 ----------------------------------------------------------------------------------------------------------------------------
 
 ### Configure vlans
